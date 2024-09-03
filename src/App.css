@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: rgb(255, 156, 26);
+}
+.logo {
+  color: blue;
+}
+
+ul {
+  display: flex;
+
+  list-style: none;
+}
+li {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.8s ease;
+  &:hover {
+    color: aliceblue;
+  }
+}
+
+.menu i {
+  display: none;
+}
+
+.fa-bars {
+  display: none;
+}
+@media (max-width: 786px) {
+  .menu {
+    position: absolute;
+    top: 130%;
+    background-color: rgb(163, 154, 154);
+    height: max-content;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 2px 4px 12px black;
+  }
+  .menu-bar {
+    display: block;
+    font-size: 25px;
+  }
+  .fa-bars {
+    display: block;
+  }
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    padding: 10px 15px;
+  }
+  .active {
+    display: none;
+  }
+  .menu i {
+    display: block;
+    cursor: pointer;
+  }
+  li:hover {
+    transition: 1.2s;
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+}
+span {
+  color: black;
+}
+/*************************/
+.home {
+  width: 100%;
+  background-color: rgb(203, 254, 254);
+  height: max-content;
+  padding-top: 2rem;
+}
+.home-title {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.home-title span{
+  background-color: red;
+  padding: 5px;
+  border-radius: 5px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cards {
+  background-color: aliceblue;
+  margin: 20px;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: 1.1s;
+  &:hover {
+    transform: scale(1.1);
+    background-color: rgb(190, 189, 189);
+  }
+}
+.card-item {
+  padding: 10px;
+}
+.img-div img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.cards a button {
+  margin-top: 15px;
+  padding: 15px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 10px;
+}
